@@ -25,7 +25,7 @@ const Project = {
     };
   },
   mounted() {
-    fetch("../assets/utils/project.json")
+    fetch("../projects.json")
       .then((response) => response.json())
       .then((response) => {
         this.project = response;
